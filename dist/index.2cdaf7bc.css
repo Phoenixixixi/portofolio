@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #181818;
+}
+
+@font-face {
+  font-family: Montserrat-bold;
+  src: url("Montserrat-Bold.8e87a344.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-medium;
+  src: url("Montserrat-Medium.03a21852.ttf");
+}
+
+section {
+  background: #181818;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+section .animation {
+  background: #288ee7;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  box-shadow: 0 0 20px 10px #3498dbcc;
+}
+
+section .different {
+  font-family: Montserrat-bold;
+  font-size: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section .high {
+  font-family: Montserrat-bold;
+}
+
+section .low {
+  font-family: Montserrat-medium;
+}
+
+section .different:hover {
+  text-shadow: 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+  transition: all .3s;
+}
+
+.tools {
+  background: #181818;
+  height: 100vh;
+  transition: all 1s;
+}
+
+a {
+  color: #fff;
+  font-family: Montserrat-medium;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #288ee7;
+  text-shadow: 2px 2px 10px #288ee7;
+  transition: all .3s;
+}
+
+.bg-navigation {
+  background-color: #232323;
+}
+
+.margin-tp {
+  margin-top: 400px;
+}
+
+.outline-about {
+  border: 3px solid #288ee7;
+  height: 600px;
+}
+
+.bg-black-ts {
+  background-color: #0000004d;
+  box-shadow: 4px 5px 81px -5px #000000a1;
+}
+
+.width-foto {
+  width: 250px;
+  height: 250px;
+}
+
+.position-foto {
+  transform: translateY(-80px);
+}
+
+.line-edit {
+  background-color: #288ee7;
+  width: 50%;
+  height: 2px;
+  margin-left: 32px;
+  box-shadow: 0 0 20px 2px #2e5f80cc;
+}
+
+.glow-foto {
+  background-color: #288ee7;
+  box-shadow: 0 0 20px 10px #2e5f80cc;
+}
+
+.project {
+  background-color: #1d1c1c;
+  height: 100vh;
+}
+/*# sourceMappingURL=index.2cdaf7bc.css.map */

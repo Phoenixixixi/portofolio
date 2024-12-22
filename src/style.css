@@ -1,0 +1,359 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #181818;
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('static/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-medium';
+    src: url('static/Montserrat-Medium.ttf');
+}
+
+span{
+    font-family: 'Montserrat-Medium';
+}
+
+h2{
+    font-size: 42px;
+}
+section{
+    position: relative;
+    background: #181818;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+section .animation{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #288ee7;
+    border-radius: 50px;
+    box-shadow: 0 0 20px 10px rgba(52, 152, 219, 0.8); /* Efek glow */
+    
+}
+
+section .different{
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat-bold';
+    font-size: 50px;
+}
+
+section .high {
+    font-family: 'Montserrat-bold';
+}
+
+section .low{
+    font-family: 'Montserrat-medium';
+    /* margin: 0px; */
+}
+
+section .different:hover{
+    text-shadow: 
+        0 0 30px white, /* Efek glow ketiga (lebih lebar) */
+        0 0 40px white, 
+        0 0 50px white;
+
+    transition: ease .3s;
+}
+
+
+   /* about me  */
+
+.tools{
+    background: #181818;
+    height: 100vh;
+    transition: ease 1s;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat-medium';
+}
+a:hover{
+    color: #288ee7; /* Biru tosca saat hover */
+    text-shadow: 2px 2px 10px #288ee7; /* Bayangan biru tosca */
+    transition: ease .3s;
+}
+.bg-navigation{
+    background-color: #232323;
+    width: 100vw;
+    
+}
+
+.margin-tp{
+    margin-top: 400px;
+}
+
+.outline-about {
+    height: 600px;
+    border: solid 3px  #288ee7;
+    
+}
+
+.bg-black-ts{
+    background-color: rgba(0, 0, 0, .3);
+    box-shadow: 4px 5px 81px -5px rgba(0,0,0,0.63);
+-webkit-box-shadow: 4px 5px 81px -5px rgba(0,0,0,0.63);
+-moz-box-shadow: 4px 5px 81px -5px rgba(0,0,0,0.63);
+    
+}
+
+.width-foto{
+    width: 250px;
+    height: 250px;
+}
+.position-foto{
+    transform: translateY(-80px);
+}
+
+.line-edit{
+    width: 50%;;
+    height: 2px;
+    background-color: #288ee7;
+    box-shadow: 0 0 20px 2px rgba(46, 95, 128, 0.8); /* Efek glow */
+    margin-left: 32px;
+}
+.glow-foto{
+    background-color: #288ee7;
+    box-shadow: 0 0 20px 10px rgba(46, 95, 128, 0.8); /* Efek glow */
+}
+
+/* Parent container */
+
+.project {
+    height: 120vh;
+    background-color: #1d1c1c;
+}
+
+span, p, h1, h2, h3, h4, h5, h6 {
+    cursor: default;
+   }
+   
+.skill{
+    height: 110vh;
+    background-color: #1d1c1c;
+}
+
+.outline-skill{
+    border: solid 4px white;
+    transition: ease .5s;
+}
+.outline-skill:hover{
+    border: solid 4px rgb(41, 114, 232);
+    background-color: rgb(22, 22, 20);
+    transition: ease .5s;
+}
+
+footer{
+    height: 30vh;
+    width:100%;
+}
+
+.same-input{
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 4px;
+    color: white;
+    font-family: 'Montserrat-Medium';
+}
+.same-input::placeholder{
+    font-family: 'Montserrat-Medium';
+}
+
+.comment{
+    height: 400px;
+}
+
+label{
+    font-family: 'Montserrat-Bold';
+}
+
+.submit{
+    background-color: transparent;
+    border: solid 1px #288ee7;
+    color: #288ee7;
+}
+
+.submit:hover{
+    background-color: #288ee7;
+    border: solid 1px #212121;
+    color: #212121;
+    transition: ease .4s;
+}
+.submit:active{
+    background-color: #2f5271;
+    border: solid 1px #212121;
+    color: #212121;
+    transition: ease .4s;
+}
+.span-medium{
+    font-size: 16px;
+    font-family: 'Montserrat-Medium';
+    text-align: justify;
+    display: block;
+}
+.span-text{
+    font-size: 24px;
+    font-family: 'Montserrat-Bold';
+    color: #5f9ed6;
+}
+.span-header{
+    font-size: 35px;
+                        font-family: 'Montserrat-Bold';
+}
+.button-small{
+    font-size: 16px;
+    background-color: transparent;
+    padding: 8px;
+    border: solid 2px #5f9ed6;
+    color: #288ee7;
+    border-radius: 4px;
+}
+.button-small:active{
+    font-size: 16px;
+    background-color: rgb(28, 27, 27);
+    padding: 8px;
+    border: solid 2px #5f9ed6;
+    color: #288ee7;
+    border-radius: 4px;
+    transition: ease .2s;
+}
+.rounded-2 span {
+    font-size: 26px;
+}
+@media screen and (max-width : 640px){
+    h2 {
+        font-size: 20px;
+    }
+    .width-foto img{
+        width: 100px;
+    }
+    .glow-foto{
+        width: 100px;
+        height: 100px;
+    }
+    .span-text{
+        font-size: 14px;
+                            font-family: 'Montserrat-Bold';
+                            color: #5f9ed6;
+    }
+    .span-medium{
+        font-size: 10px;
+    }
+    .span-header{
+        font-size: 14px;
+        font-family: 'Montserrat-Bold';
+    }
+    a{
+        font-size: 10px;
+    }
+    .high{
+        font-size: 72px;
+    }
+    .respon-image{
+        width: 10px;
+    }
+    .button-small{
+        font-size: 10px;
+        background-color: transparent;
+        padding: 8px;
+        border: solid 2px #5f9ed6;
+        color: #288ee7;
+        border-radius: 4px;
+    }
+    .button-small:active{
+        font-size: 10px;
+        background-color: rgb(28, 27, 27);
+        padding: 8px;
+        border: solid 2px #5f9ed6;
+        color: #288ee7;
+        border-radius: 4px;
+        transition: ease .2s;
+    }
+    .navigasi{
+        font-size: 10px;
+    }
+    .project{
+        height: 200vh;
+    }
+    .rounded-2 img {
+        width: 30px;
+    }
+    .rounded-2 span {
+        font-size: 10px;
+        display: none;
+    }
+    .skill{
+        height: 90vh;
+    }
+    footer h1{
+        font-size: 12px;
+    }
+    footer{
+        height: 40vh;
+    }
+    .bg-navigation{
+        width: 100vw;
+    }
+}
+
+@media  screen and (max-width:400px) {
+
+    .skill{
+        height: 200vh;
+    }
+    .project{
+        height: 300vh;
+    }
+    footer{
+        height: 40vh;
+    }
+    .button-small{
+        font-size: 8px;
+        background-color: transparent;
+        padding: 8px;
+        border: solid 2px #5f9ed6;
+        color: #288ee7;
+        border-radius: 4px;
+    }
+    .button-small:active{
+        font-size: 8px;
+        background-color: rgb(28, 27, 27);
+        padding: 8px;
+        border: solid 2px #5f9ed6;
+        color: #288ee7;
+        border-radius: 4px;
+        transition: ease .2s;
+    }
+    .navigasi{
+        font-size: 8px;
+    }
+    section{
+        height: 120vh;
+        width: 100vw;
+    }
+    section high{
+        height: 120vh;
+    }
+    .high{
+        font-size: 42px;
+    }
+    .bg-navigation{
+        width: 100vw;
+    }
+}
